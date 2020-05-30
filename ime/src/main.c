@@ -81,7 +81,7 @@ int main(int argc, const char *argv[]) {
 		if (!shown_dial) {
 			sceImeDialogParamInit(&param);
 
-			param.supportedLanguages = SCE_IME_LANGUAGE_ENGLISH;
+			param.supportedLanguages = SCE_IME_LANGUAGE_ENGLISH_US;
 			param.languagesForced = SCE_TRUE;
 			param.type = SCE_IME_DIALOG_TEXTBOX_MODE_DEFAULT;
 			param.option = 0;
