@@ -67,14 +67,14 @@ int main(){
 		printf("Ang.Velocity <x:%+1.3f y:%+1.3f z:%+1.3f>     \n",state.angularVelocity.x, state.angularVelocity.y, state.angularVelocity.z);
 		printf("Orientation  <x:%+1.3f y:%+1.3f z:%+1.3f>     \n",state.basicOrientation.x, state.basicOrientation.y, state.basicOrientation.z);
 		printf("Device       <x:%+1.3f y:%+1.3f z:%+1.3f w:%+1.3f>\n",state.deviceQuat.x, state.deviceQuat.y, state.deviceQuat.z, state.deviceQuat.w);
-		printf("Rotation.X   <x:%+1.3f y:%+1.3f z:%+1.3f w:%+1.3f>\n",state.rotationMatrix.x.x, state.rotationMatrix.x.y, state.rotationMatrix.x.z, state.rotationMatrix.x.w);
-		printf("Rotation.Y   <x:%+1.3f y:%+1.3f z:%+1.3f w:%+1.3f>\n",state.rotationMatrix.y.x, state.rotationMatrix.y.y, state.rotationMatrix.y.z, state.rotationMatrix.y.w);
-		printf("Rotation.Z   <x:%+1.3f y:%+1.3f z:%+1.3f w:%+1.3f>\n",state.rotationMatrix.z.x, state.rotationMatrix.z.y, state.rotationMatrix.z.z, state.rotationMatrix.z.w);
-		printf("Rotation.W   <x:%+1.3f y:%+1.3f z:%+1.3f w:%+1.3f>\n",state.rotationMatrix.w.x, state.rotationMatrix.w.y, state.rotationMatrix.w.z, state.rotationMatrix.w.w);
-		printf("NedMatrix.X  <x:%+1.3f y:%+1.3f z:%+1.3f w:%+1.3f>\n",state.nedMatrix.x.x, state.nedMatrix.x.y, state.nedMatrix.x.z, state.nedMatrix.x.w);
-		printf("NedMatrix.Y  <x:%+1.3f y:%+1.3f z:%+1.3f w:%+1.3f>\n",state.nedMatrix.y.x, state.nedMatrix.y.y, state.nedMatrix.y.z, state.nedMatrix.y.w);
-		printf("NedMatrix.Z  <x:%+1.3f y:%+1.3f z:%+1.3f w:%+1.3f>\n",state.nedMatrix.z.x, state.nedMatrix.z.y, state.nedMatrix.z.z, state.nedMatrix.z.w);
-		printf("NedMatrix.W  <x:%+1.3f y:%+1.3f z:%+1.3f w:%+1.3f>\n",state.nedMatrix.w.x, state.nedMatrix.w.y, state.nedMatrix.w.z, state.nedMatrix.w.w);
+		printf("Rotation.X   <x:%+1.3f y:%+1.3f z:%+1.3f w:%+1.3f>\n",state.rotationMatrix.fv[0].x, state.rotationMatrix.fv[0].y, state.rotationMatrix.fv[0].z, state.rotationMatrix.fv[0].w);
+		printf("Rotation.Y   <x:%+1.3f y:%+1.3f z:%+1.3f w:%+1.3f>\n",state.rotationMatrix.fv[1].x, state.rotationMatrix.fv[1].y, state.rotationMatrix.fv[1].z, state.rotationMatrix.fv[1].w);
+		printf("Rotation.Z   <x:%+1.3f y:%+1.3f z:%+1.3f w:%+1.3f>\n",state.rotationMatrix.fv[2].x, state.rotationMatrix.fv[2].y, state.rotationMatrix.fv[2].z, state.rotationMatrix.fv[2].w);
+		printf("Rotation.W   <x:%+1.3f y:%+1.3f z:%+1.3f w:%+1.3f>\n",state.rotationMatrix.fv[3].x, state.rotationMatrix.fv[3].y, state.rotationMatrix.fv[3].z, state.rotationMatrix.fv[3].w);
+		printf("NedMatrix.X  <x:%+1.3f y:%+1.3f z:%+1.3f w:%+1.3f>\n",state.nedMatrix.fv[0].x, state.nedMatrix.fv[0].y, state.nedMatrix.fv[0].z, state.nedMatrix.fv[0].w);
+		printf("NedMatrix.Y  <x:%+1.3f y:%+1.3f z:%+1.3f w:%+1.3f>\n",state.nedMatrix.fv[1].x, state.nedMatrix.fv[1].y, state.nedMatrix.fv[1].z, state.nedMatrix.fv[1].w);
+		printf("NedMatrix.Z  <x:%+1.3f y:%+1.3f z:%+1.3f w:%+1.3f>\n",state.nedMatrix.fv[2].x, state.nedMatrix.fv[2].y, state.nedMatrix.fv[2].z, state.nedMatrix.fv[2].w);
+		printf("NedMatrix.W  <x:%+1.3f y:%+1.3f z:%+1.3f w:%+1.3f>\n",state.nedMatrix.fv[3].x, state.nedMatrix.fv[3].y, state.nedMatrix.fv[3].z, state.nedMatrix.fv[3].w);
 		
 		printf("\n");
 		
